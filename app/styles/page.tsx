@@ -1,5 +1,5 @@
-// import styled from "styled-components";
-// import { theme } from "../utils/theme";
+import styled from "styled-components";
+import { theme } from "../utils/theme";
 
 // export const OuterScreenBlockPadding = styled.div`
 //   padding: 1rem 2rem;
@@ -102,20 +102,20 @@
 //     box-sizing: border-box;
 //   }
 // `;
-// export const BlackButton = styled.div`
-//   background: #000;
-//   border-radius: 15px;
-//   font-family: "Audiowide", serif;
-//   font-style: normal;
-//   font-weight: 400;
-//   font-size: 12px;
-//   line-height: 15px;
-//   color: #ffffff;
-//   padding: 0 10px;
-//   height: 36px;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   cursor: pointer;
-//   text-transform: uppercase;
-// `;
+export const BlackButton = styled.div`
+  background: #000;
+  border-radius: 15px;
+  font-family: "Audiowide", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+  padding: 0 10px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-transform: uppercase;
+`;
