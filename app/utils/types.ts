@@ -1,11 +1,9 @@
- 
 export type EASChainConfig = {
   chainId: number;
   chainName: string;
   version: string;
   contractAddress: string;
   schemaRegistryAddress: string;
-  resolverAddress: string;
   etherscanURL: string;
   /** Must contain a trailing dot (unless mainnet). */
   subdomain: string;
@@ -51,38 +49,3 @@ export type ResolvedAttestation = Attestation & {
   name: string;
   confirmation?: Attestation;
 };
-
-
-// sc:
-export interface SchemaResult {
-  data: DataSchema;
-}
-export interface DataSchema {
-  schema: Schema | null;
-}
-export interface Schema {
-  id: string;
-  schema: string;
-  creator: string;
-  resolver: string;
-  revocable: boolean;
-  index: string;
-  txid: string;
-  time: number; 
-}
- 
-
-
-// sc:
-export interface MyTimestampResult {
-  data: MyTimestampData;
-}
-export interface MyTimestampData {
-  timestamps: Timestamp[];
-}
-export interface Timestamp {
-  from: string;
-  id: string;
-  timestamp: number;
-}
- 

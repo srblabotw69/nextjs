@@ -37,39 +37,6 @@ const MainNavigation = styled.div`
   width: 100%;
 `;
 
-// // sc:
-// // background-color: #333342;
-// const SideNavigation = styled.div`
-// height: 100%;
-//   min-width: 100px;
-//   max-width: 200px;
-//   position: flex;
-//   z-index: 1;
-//   top: 1;
-//   left: 0;
-//   overflow-x: hidden;
-//   padding-top: 20px;
-//   padding: 10px 10px; 
-//   resize: vertical;
-//   `;
-  
-// // sc:
-// const MenuItemSidebar = styled.div<MenuItemProps>`
-//   background-color: ${({ active }) => (active ? "#F1F4F9" : "#FFF")};
-//   border-radius: 20px;
-//   padding: 12px 20px;
-//   font-family: "Montserrat", serif;
-//   font-style: normal;
-//   font-weight: ${({ active }) => (active ? "700" : "500")};
-//   font-size: 16px;
-//   line-height: 10px;
-//   cursor: pointer;
-//   color: #333342;
-//   :hover {
-//     background-color: ${({ active }) => (active ? "#F1F4F9" : "#f1f4f966")};
-//   }
-// `;
-
 const Logo = styled.div`
   display: flex;
   align-items: center;
@@ -162,39 +129,17 @@ export function Header() {
   const location = useLocation();
 
   let menuItems: MenuItemType[] = [
-    // {
-    //   title: "Attest",
-    //   onClick: () => navigate("/"),
-    //   path: "/",
-    // },
-
-    // // sc:    
-    // {
-    //   title: "Offchain",
-    //   onClick: () => navigate("/offchain"),
-    //   path: "/offchain",
-    // },
-    // {
-    //   title: "Schema",
-    //   onClick: () => navigate("/schema"),
-    //   path: "/schema",
-    // },
-    // {
-    //   title: "Timestamp",
-    //   onClick: () => navigate("/timestamp"),
-    //   path: "/timestamp",
-    // },
-    // {
-    //   title: "Upload",
-    //   onClick: () => navigate("/upload"),
-    //   path: "/upload",
-    // },
+    {
+      title: "Attest",
+      onClick: () => navigate("/"),
+      path: "/",
+    },
   ];
 
   if (address) {
     menuItems.push({
       title: "Connections",
-      onClick: () => navigate("/happyattest/connections"),
+      onClick: () => navigate("/connections"),
       path: "/connections",
     });
   }
@@ -207,19 +152,18 @@ export function Header() {
         <Container>
           <MainNavigation>
             <LogoContainer>
-              <Logo onClick={() => navigate("/happyattest")}>
+              <Logo onClick={() => navigate("/")}>
                 <LogoImage src="/logo.png" />
-                <LogoText>Happy Attest</LogoText>
-              
+                <LogoText>METIRL</LogoText>
               </Logo>
             </LogoContainer>
-            <Left>  
+            <Left>
               <Links>
                 {address && (
                   <QR
                     size={20}
                     color={"#BD9EFF"}
-                    onClick={() => navigate("/happyattest/qr")}
+                    onClick={() => navigate("/qr")}
                   />
                 )}
                 {menuItems.map((menuItem, i) => (
@@ -235,7 +179,6 @@ export function Header() {
 
               <MobileLinks></MobileLinks>
             </Left>
-
             <Right>
               <CustomConnectButton />
             </Right>
