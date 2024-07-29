@@ -15,7 +15,7 @@
     "@ethereum-attestation-service/eas-sdk": "^2.4",
     "react-router": "^6.13.0",
     "react-router-dom": "^6.13.0",
-    "wagmi": "0.12.10",
+    "wagmi": "0.12.10"
   },
   "devDependencies": {
     "typescript": "^5",
