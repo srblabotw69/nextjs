@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { theme } from "../utils/theme";
 
-export const OuterScreenBlockPadding = styled.div`
+const OuterScreenBlockPadding = styled.div`
   padding: 1rem 2rem;
   box-sizing: border-box;
   height: 100%;
@@ -11,7 +11,7 @@ export const OuterScreenBlockPadding = styled.div`
   }
 `;
 
-export const PageTitle = styled.div`
+const PageTitle = styled.div`
   font-family: "Montserrat", serif;
   font-style: normal;
   font-weight: 700;
@@ -30,18 +30,18 @@ type ScreenOuterBlockProps = {
   width?: number;
 };
 
-export const ScreenOuterBlock = styled.div<ScreenOuterBlockProps>`
+const ScreenOuterBlock = styled.div<ScreenOuterBlockProps>`
   margin: 0 auto;
   max-width: ${({ width }) => width ?? 1200}px;
 `;
 
-export const globalRadiusWhite = `
+const globalRadiusWhite = `
   border-radius: 8px;
   background: #ffffff;
   box-shadow: 0 4px 20px #e6e6e6;
 `;
 
-export const ScreenWhiteBlock = styled.div`
+const ScreenWhiteBlock = styled.div`
   padding: 2rem 3rem;
   box-sizing: border-box;
   ${globalRadiusWhite};
@@ -51,19 +51,19 @@ export const ScreenWhiteBlock = styled.div`
   }
 `;
 
-export const TableHolder = styled.div`
+const TableHolder = styled.div`
   margin-top: 12px;
   overflow-x: auto;
 `;
 
-export const PageHeader = styled.div`
+const PageHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 8px;
 `;
 
-export const Alert = styled.div`
+const Alert = styled.div`
   background-color: ${theme.primary["orange-vivid-700"]};
   display: flex;
   padding: 10px 15px;
@@ -74,7 +74,7 @@ export const Alert = styled.div`
   margin-bottom: 1rem;
   box-sizing: border-box;
 `;
-export const ColumnContainer = styled.div`
+const ColumnContainer = styled.div`
   width: 700px;
   border-radius: 10px;
 
@@ -82,7 +82,7 @@ export const ColumnContainer = styled.div`
     width: 100%;
   }
 `;
-export const PostsContainer = styled.div`
+const PostsContainer = styled.div`
   padding: 28px 46px;
   background-color: #fff;
   box-sizing: border-box;
@@ -91,7 +91,7 @@ export const PostsContainer = styled.div`
     padding: 28px 0px 20px 20px;
   }
 `;
-export const PostBlockContainer = styled.div`
+const PostBlockContainer = styled.div`
   box-shadow: 0 4px 33px rgba(168, 198, 207, 0.15);
   border-radius: 10px 10px 0 0;
   background-color: #fff;
@@ -102,7 +102,7 @@ export const PostBlockContainer = styled.div`
     box-sizing: border-box;
   }
 `;
-export const BlackButton = styled.div`
+const BlackButton = styled.div`
   background: #000;
   border-radius: 15px;
   font-family: "Audiowide", serif;
