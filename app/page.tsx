@@ -3,7 +3,6 @@ import Image from "next/image";
 import Connections from "./Connections";
 import Schema from "./eas/Schema";
 
-
 const router = createBrowserRouter([
   {
     path: "/happyattest/",

@@ -1,3 +1,4 @@
+"use client"; // This is a client component 👈🏽
 import { useEffect, useState } from "react";
 import GradientBar from "../components/GradientBar";
 import { useAccount, useSigner } from "wagmi";
