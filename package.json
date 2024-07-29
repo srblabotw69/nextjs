@@ -23,7 +23,7 @@
     "jdenticon": "^3.2.0",
     "connectkit": "1.2.2",
     "pino-pretty": "7.0.0",
-    "ethers": "^5.7.2"
+    "ethers": "6.8.1"
   },
   "devDependencies": {
     "typescript": "^5",
