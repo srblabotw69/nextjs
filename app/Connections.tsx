@@ -1,3 +1,4 @@
+"use client"; // This is a client component 👈🏽
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import GradientBar from "./components/GradientBar";
