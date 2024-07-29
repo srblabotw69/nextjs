@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Image from "next/image";
+import { Root } from "./Root";
 import Connections from "./Connections";
 import Schema from "./eas/Schema";
 
