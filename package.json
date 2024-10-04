@@ -30,7 +30,7 @@
     "web-vitals": "^2.1.4",
     "qrcode": "^1.5.1",
     "qrcode.react": "^3.1.0",
-    "next": "^12.2.4",
+    "next": "^14.2.9",
     "eslint": "9.8.0",
     "eslint-config": "0.3.0",
     "@next/eslint-plugin-next": "^14.2.5"
